@@ -1,1 +1,243 @@
-/* место для вашего кода */
+
+/* ----header---- */
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    padding: 92px 50px 96px 50px;
+    
+}
+.header_logo {
+    display: block; 
+    min-width: 148px; 
+    max-height: 105px;
+}
+
+.header__links-list {
+    display: flex;
+    gap: 32px;
+    list-style: circle;
+}
+
+.header__links-list-item {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.header__links-list-item_no-bullit{
+    list-style: none; 
+    text-decoration: none; 
+    font-weight: 400; 
+    font-size: 18px; 
+}
+
+.header__links-list-item_no-bullit a {
+    text-decoration: none;
+}
+
+.address {
+    display: flex;
+    max-width: 240px;
+    justify-self: end;
+    flex-direction: column;
+    list-style: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135%;
+    font-style: normal;
+}
+
+
+/* ----Main---- */
+
+/* title */
+.cover {
+    position: relative;
+    background-image: url(/images/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+}
+
+.cover::before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    background-color: #000;
+    opacity: 0.6;
+}
+
+.cover__title {
+    margin: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    font-size: 100px;
+    padding-top: 165px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+
+.aligned-text {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    font-size: 100%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 115%;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+
+.aligned-text_center {
+    display: flex;
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 115%;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+.aligned-text_right {
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 115%;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: end;
+} 
+
+.no-letter-spacing {
+    letter-spacing: 0;
+}
+
+/* description */
+
+.cover__description{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    padding-top: 106px;
+}
+
+.cover__description-text {
+    display: flex;
+    align-items: center;
+    font-family: "Raleway";
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: uppercase;
+    word-spacing: 0.9em;
+}
+
+.bet-button{
+    color: #fff;
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: uppercase;
+    width: 256px;
+    height: 51px;
+    background:none;
+    border-color: #fff;
+}
+
+/* lots */
+
+.lots {
+    padding-top: 180px;
+}
+
+.lots__heading{
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-left: 40px;
+    padding-bottom: 27px;
+}
+
+.lots__card-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    
+}
+
+.lots__card-list-item {
+    max-width: 334px; 
+    min-height: 596px; 
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    
+}
+
+.card_type_film, .card_type_book, .card_type_picture{
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.card__title {
+    position: absolute;
+    top: 48px;
+    left: 40px;
+    right: 40px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration:underline;
+    text-decoration-skip-ink: none;
+    text-transform: uppercase ;
+    z-index: 3; 
+}
+
+.card__text {
+    position: absolute;
+    bottom: 48px; 
+    left: 40px;
+    right: 40px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 120%;
+    z-index: 3;
+}
+
+.overlay {
+    position: relative;
+    overflow: hidden; 
+  }
+
+.overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;; 
+  }
