@@ -8,7 +8,6 @@
   padding: 91px 50px 97px 50px;
 }
 .header_logo {
-  display: block; 
   min-width: 148px; 
   max-height: 105px;
   transform: translateY(2px);
@@ -26,8 +25,7 @@
   text-underline-offset: 4px;
 }
 
-.header__links-list-item_no-bullit{
-  padding-right: 1px; 
+.header__links-list-item_no-bullit {
   font-weight: 400; 
   font-size: 1.8rem; 
   text-decoration: none;
@@ -49,7 +47,6 @@
   line-height: 135%;
   text-decoration-thickness: 2px;
   text-underline-offset: 5px;
-  list-style: none;
 }
 
 
@@ -124,7 +121,7 @@
 
 /* description */
 
-.cover__description{
+.cover__description {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -140,7 +137,7 @@
   word-spacing: 1.85rem;
 }
 
-.bet-button{
+.bet-button {
   width: 256px;
   height: 51px;
   border-color: #fff  ;
@@ -194,7 +191,7 @@
   z-index: 3;
   color: #fff;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 2.2rem;
   text-decoration:underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
@@ -251,8 +248,8 @@
   padding: 0 0 180px 71px;
 }
 
-.about__one-column{
-  padding-top: 35px;
+.about__column-one {
+  padding-top: 30px;
 }
 
 .about__logo {
@@ -269,7 +266,7 @@
   max-width: 148px;
 }
 
-.about__two-column {
+.about__column-two {
   padding-top: 135px;
 }
 
@@ -281,7 +278,7 @@
 }
 
 
-.about__text-one {
+.about__text-first {
   max-width: 688px;
   padding-bottom: 24px;
   font-weight: 400;
@@ -289,7 +286,7 @@
   line-height: 120%;
 }
 
-.about__text-two{
+.about__text-second{
   max-width: 693px;
   font-weight: 400;
   font-size: 2rem;
@@ -309,7 +306,6 @@
   padding-left: 50px;
   font-weight: 400;
   font-size: 1.8rem;
-  font-style: none;
   line-height: 135%;
 }
 
