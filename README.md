@@ -1,1 +1,1 @@
-https://github.com/lilleo-create/yandex-praktikum
+https://github.com/lilleo-create/one-tabe-nado-fd
