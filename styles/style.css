@@ -5,27 +5,33 @@
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    padding: 92px 50px 96px 50px;
+    padding: 87px 50px 97px 50px;
     
 }
 .header_logo {
     display: block; 
     min-width: 148px; 
     max-height: 105px;
+    transform: translateY(1px);
 }
 
 .header__links-list {
     display: flex;
     gap: 32px;
     list-style: circle;
+    padding-left: 1px;
 }
 
 .header__links-list-item {
     font-weight: 400;
     font-size: 18px;
+    transform: translateY(-1px);
+    text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
 }
 
 .header__links-list-item_no-bullit{
+  padding-right: 1px;
     list-style: none; 
     text-decoration: none; 
     font-weight: 400; 
@@ -108,6 +114,7 @@
     line-height: 115%;
     letter-spacing: 0.3em;
     text-transform: uppercase;
+    right: -15px;
     justify-content: center;
 }
 
@@ -139,15 +146,12 @@
 }
 
 .cover__description-text {
-    display: flex;
-    align-items: center;
-    font-family: "Raleway";
     color: #fff;
     font-weight: 400;
     font-size: 22px;
     text-transform: uppercase;
-    word-spacing: 0.9em;
-}
+    word-spacing: 19px;
+    }
 
 .bet-button{
     color: #fff;
@@ -156,15 +160,14 @@
     text-transform: uppercase;
     width: 256px;
     height: 51px;
-    background:none;
+    background:transparent;
     border-color: #fff;
 }
 
 /* lots */
 
 .lots {
-    padding-top: 180px;
-    padding-bottom: 120px;
+    padding: 179px 24px 120px;
 }
 
 .lots__heading{
@@ -178,8 +181,8 @@
 .lots__card-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
-    
+    gap: 25px; 
+    padding-bottom: 30px;
 }
 
 .lots__card-list-item {
@@ -193,8 +196,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding-bottom: 30px;
-}
+  }
 
 .card_type_film, .card_type_book, .card_type_picture{
     width: 100%; 
@@ -254,7 +256,7 @@
 }
 
 .lots__look-more-link {
-  padding-left: 64px;
+  padding-left: 40px;
   font-weight: 400;
   font-size: 20px;
   text-decoration: underline;
@@ -267,7 +269,7 @@
 .about{
   display: grid;
   grid-template-columns: 240px 1fr;
-  padding:100px 50px;
+  padding: 0 0 180px 71px;
   gap: 72px;
 }
 
@@ -292,9 +294,8 @@
 }
 
 .about__two-column {
-  display: flex;
-  flex-direction: column;
-  padding-top: 133px;
+  display: inline-block;
+  padding-top: 135px;
 }
 
 .about__title {
@@ -304,13 +305,22 @@
   padding-bottom: 100px;
 }
 
-.about__text{
-  font-weight: 400;
+
+.about__text-one {
+  padding-bottom: 24px;
+  font-size: 20px;
+  max-width: 688px;
   font-size: 20px;
   line-height: 120%;
-  display: flex;
-  flex-direction: column;
-  gap: 24px; 
+  font-weight: 400;
+}
+
+.about__text-two{
+  font-size: 20px;
+  max-width: 693px;
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 400;
 }
 
 /* Footer */
@@ -319,7 +329,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; 
   color: #000;
-  padding-bottom: 82px;
+  padding-top: 1px;
 }
 
 .footer__address {
@@ -343,6 +353,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
 }
 
 .footer__menu-link {
