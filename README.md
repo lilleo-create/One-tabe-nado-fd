@@ -1,1 +1,1 @@
-https://github.com/lilleo-create/one-tabe-nado-fd
+https://github.com/lilleo-create/One-tabe-nado-fd
