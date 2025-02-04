@@ -7,13 +7,14 @@
   align-items: center;
   padding: 90px 50px 97px 50px;
 }
+
 .header_logo {
   min-width: 148px; 
   max-height: 105px;
   transform: translateY(2px);
 }
 
-.header__links-list{
+.header__links-list {
   display: flex;
   gap: 32px;
   list-style: circle;
@@ -24,6 +25,7 @@
   font-size: 1.8rem;
   text-underline-offset: 4px;
 }
+
 .header__link_active{
   text-decoration: none;
 }
@@ -216,7 +218,7 @@
   text-decoration:underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
-  text-transform: uppercase ; 
+  text-transform: uppercase; 
 }
 
 .card__text {
