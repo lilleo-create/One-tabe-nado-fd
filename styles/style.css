@@ -147,7 +147,7 @@
 .bet-button {
   width: 256px;
   min-height: 51px;
-  border-color: #fff;
+  border: 1px solid #fff;
   color: #fff;
   font-weight: 500;
   font-size: 22px;
@@ -310,18 +310,9 @@
 }
 
 .footer__address {
-  display: flex;
-  flex-direction: column;
+  justify-self: start;
+  max-width: 100%;
   padding-left: 51.1px;
-  font-weight: 400;
-  font-size: 1.8rem;
-  font-style: normal;
-  line-height: 135%;
-}
-
-.footer__address a {
-  text-decoration-thickness: 1px;
-  text-underline-offset: 5px;
 }
 
 .footer__menu {
@@ -338,7 +329,7 @@
 
 .footer__menu-list-item a {
   text-decoration-thickness: 1px;
-  text-underline-offset: 5px;
+  text-underline-offset: 4px;
 }
 
 .footer__menu-link {
